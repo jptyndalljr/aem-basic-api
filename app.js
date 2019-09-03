@@ -5,12 +5,17 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require("body-parser");
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
+var compression = require('compression');
+var hemlet = require('helmet');
 
 var indexRouter = require('./routes/index');
 var sitesRouter = require('./routes/sites');
 
 var app = express();
 app.use(bodyParser.json());
+
+app.user(helmet());
+app.use(compression());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
