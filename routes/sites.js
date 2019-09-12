@@ -2,10 +2,10 @@ var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'Welcome123!',
-  database: 'express_test'
+  host: 'aem-basic.c9gbtoeqz9gv.us-east-2.rds.amazonaws.com',
+  user: 'admin',
+  password: 'Luckie123!',
+  database: 'aem-basic'
 });
 
 connection.connect();
