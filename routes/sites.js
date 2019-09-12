@@ -2,10 +2,17 @@ var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
 var connection = mysql.createConnection({
+<<<<<<< Updated upstream
   host: 'aem-basic.c9gbtoeqz9gv.us-east-2.rds.amazonaws.com',
   user: 'admin',
   password: 'Luckie123!',
   database: 'aem-basic'
+=======
+  host: 'us-cdbr-iron-east-02.cleardb.net',
+  user: 'b488ce81f7b733',
+  password: '76cb57df',
+  database: 'heroku_cf4261561df74fc'
+>>>>>>> Stashed changes
 });
 
 connection.connect();
